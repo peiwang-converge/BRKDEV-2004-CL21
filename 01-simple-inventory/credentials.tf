@@ -3,9 +3,9 @@
 
 # APIKEY string required to be provided in a secure method
 variable "intersight_apikey" {
-    description = "API Key for Terraform Demo Account"
-    type = string
-    sensitive = true
+  description = "API Key for Terraform Demo Account"
+  type        = string
+  sensitive   = true
 }
 
 ## Two options exist for specifying the secret key.
@@ -20,15 +20,15 @@ variable "intersight_apikey" {
 
 ### Option 2: Provide entire contents of PEM file as a string
 variable "intersight_secretkey" {
-    description = "Contents of secret key PEM file"
-    type = string
-    sensitive = true
+  description = "Contents of secret key PEM file"
+  type        = string
+  sensitive   = true
 }
 
 variable "intersight_endpoint" {
-    description = "Intersight API endpoint"
-    type = string
-    default = "https://intersight.com"
+  description = "Intersight API endpoint"
+  type        = string
+  default     = "https://intersight.com"
 }
 
 # In standard Terraform operations, you'll need to provide these values viaß
